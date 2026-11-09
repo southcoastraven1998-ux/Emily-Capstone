@@ -1,0 +1,25 @@
+/* Sets line height for better readability */
+body {
+    line-height 1.6;
+
+}
+
+/* Heading styles with font weight, font style, and alingment */
+h2 {
+    font-weight:bold;
+    font-style: normal;
+    text-align: center;
+    
+}
+
+/* Nested selector (targets h2 headings inside a section) */
+section h2 {
+    color:#2c3e50
+
+}
+
+/* Psuedo-class selector (changes link a color when hovered) */
+a:hover{
+    color:#e74c3c;
+    text-decoration: underline;
+}
