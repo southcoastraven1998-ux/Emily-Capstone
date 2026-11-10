@@ -1,84 +1,89 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
     <title>Capstone Fitness and Longevity</title>
-    <meta charset="utf-8 />
 </head>
-<body>
-</body>
-</html>
+<body id="top">
 
-<!Header section with title and main summary-->
-<Header>
-    <h1>Fit for life </h1>
-    <p> Physical fitness is important for longevity because it keeps your heart healthy, strengthens muscles and bones, 
-        and reduces the risk of chronic diseases. Staying active helps maintain mobility, independance, and a better quality
-        of life as we age.
+    <!-- Header section with title, main summary, and internal navigation link -->
+    <header>
+        <h1>Fit for life</h1>
+        <p>Physical fitness is important for longevity because it keeps your heart healthy, strengthens muscles and bones, and reduces the risk of chronic diseases. Staying active helps maintain mobility, independence, and a better quality of life as we age.</p>
+        
+        <!-- Hyperlink that links to an internal source -->
+        <p><a href="#gallery">Jump down to our Fitness Gallery</a></p>
     </header>
-    <!-- Section 1: Core Fitness Pillars-->
+
+    <!-- Section 1: Core Fitness Pillars -->
     <section>
-        <h2> Key components of fitness</h2>
-        <p> Achieving overall health requires balancing multiple types of excercise throughout your weekly routine. </p>
+        <h2>Key components of fitness</h2>
+        <p>Achieving overall health requires balancing multiple types of exercise throughout your weekly routine.</p>
 
-        <h3> Essential Elements</h3>
-        <!-- List showing multiple fitness categories-->
+        <h3>Essential Elements</h3>
         <ul>
-            <li> Cardiovascular Endurance (Running, Swimming, Walking)<li>
-            <li> Strength Training ( Weightlifting, bodyweight excercises)</li>
-            <li> Flexibility and mobility (Stretching, Yoga)<li>
-            <li> Balance and Stability core work <li>
-        <ul>
+            <li>Cardiovascular Endurance (Running, Swimming, Walking)</li>
+            <li>Strength Training (Weightlifting, bodyweight exercises)</li>
+            <li>Flexibility and mobility (Stretching, Yoga)</li>
+            <li>Balance and Stability core work</li>
+        </ul>
+    </section>
+
+    <!-- Section 2: Getting started -->
     <section>
-
-        <!--Section 2: Getting started -->
-        <section>
-            <h2> Daily habits for longevity<h2>
-            <p> Consistency is key when building a lasting lifestyle change. Start with small, daily movements and build up
-                gradually over time,</p>
-            
-            <h3>Workout Routines</h3>
-            <ul>
-                <li>Cardio
-                    <ul>
-                        <li>Running</li>
-                        <li>Cycling</li>
-                    </ul>
-                </li>
-                <li>Strength Training</li>
-            </ul>
-        </section>
+        <h2>Daily habits for longevity</h2>
+        <p>Consistency is key when building a lasting lifestyle change. Start with small, daily movements and build up gradually over time.</p>
         
-        <section>
-            <h2>Nutrition</h2>
-            <p>Here's what nutrition advice we have to offer:</p>
+        <h3>Workout Routines</h3>
+        <ul>
+            <li>Cardio
+                <ul>
+                    <li>Running</li>
+                    <li>Cycling</li>
+                </ul>
+            </li>
+            <li>Strength Training</li>
+        </ul>
+    </section>
 
-            <ol>
-                <li>High protein mean prep<li>
-                <Hydration Strategies</li>
-            </ol>
-        </section>
+    <!-- Nutrition Section -->
+    <section>
+        <h2>Nutrition</h2>
+        <p>Here's what nutrition advice we have to offer:</p>
+
+        <ol>
+            <li>High protein meal prep</li>
+            <li>Hydration Strategies</li>
+        </ol>
+    </section>
+    
+    <!-- Gallery Section (Targets the internal link) -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Here is a small gallery for fitness inspiration.</p>
         
-        <section>
-            <h2>Gallery<h2>
-            <p>Here is a small gallery for fitness inspiration. </p>
-            
+        <!-- Image 1: Relative file path, alt attribute, custom width/height, and wrapped in an image link -->
         <p>
-            <img src="ropes1.avif.jpg" alt="Person working out with rope
+            <a href="https://unsplash.com" target="_blank">
+                <img src="ropes1.avif.jpg" alt="Person working out with battle ropes in a gym" width="300" height="200">
+            </a>
             <br>
-            Gym training session
-            Photo created by: <a href="#">unsplash </a>
-        </P>
-
-        <p>
-            <img src="squat1.avif" alt="Person working out with barbell
-            <br>
-            Gym training session
-            Photo created by: <a href="#">unsplash</a>
-
+            Gym training session<br>
+            <!-- Hyperlink that links to an external source & opens in a new tab -->
+            Photo created by: <a href="https://unsplash.com" target="_blank">Unsplash</a>
         </p>
 
-            
-        </body>
-        </html>   
+        <!-- Image 2: Absolute file path, alt attribute, custom width/height -->
+        <p>
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd" alt="Person performing a barbell squat" width="300" height="200">
+            <br>
+            Gym training session<br>
+            Photo created by: <a href="https://unsplash.com" target="_blank">Unsplash</a>
+        </p>
 
+        <!-- Internal link back to top -->
+        <p><a href="#top">Back to top</a></p>
+    </section>
 
+</body>
+</html>
