@@ -1,25 +1,64 @@
-/* Sets line height for better readability */
+/* Base Page Styling */
 body {
-    line-height 1.6;
-
-}
-
-/* Heading styles with font weight, font style, and alingment */
-h2 {
-    font-weight:bold;
+    /* Custom font & Font properties */
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     font-style: normal;
-    text-align: center;
-    
+
+    /* Color & Background Color properties */
+    color: #333333;
+    background-color: #f4f7f6;
+    margin: 20px;
+    line-height: 1.6;
 }
 
-/* Nested selector (targets h2 headings inside a section) */
-section h2 {
-    color:#2c3e50
-
+/* Headings Styling */
+h1 {
+    /* Color property */
+    color: #1b4332;
+    /* Font properties */
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
 }
 
-/* Psuedo-class selector (changes link a color when hovered) */
-a:hover{
-    color:#e74c3c;
-    text-decoration: underline;
+h2 {
+    color: #2d6a4f;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h3 {
+    color: #40916c;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Header Banner Styling */
+header {
+    /* Background-color property */
+    background-color: #d8f3dc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Section Container Styling */
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Links Styling */
+a {
+    color: #1b4332;
+    font-weight: 700;
+}
+
+/* Italic text styling for captions */
+p em, p i {
+    font-style: italic;
 }
