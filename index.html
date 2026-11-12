@@ -3,27 +3,22 @@
 <head>
     <meta charset="utf-8">
     <title>Capstone Fitness and Longevity</title>
-
-    <!-- Google Fonts link for Custom Font (Roboto) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-    <!-- Link element that loads your stylesheet (ensure filename matches your actual CSS file) -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Link to your external stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
 
-    <!-- Header section with Class Selector -->
-    <header class="card-section">
+    <!-- Header section with title, main summary, and internal navigation link -->
+    <header>
         <h1>Fit for life</h1>
         <p>Physical fitness is important for longevity because it keeps your heart healthy, strengthens muscles and bones, and reduces the risk of chronic diseases. Staying active helps maintain mobility, independence, and a better quality of life as we age.</p>
         
+        <!-- Hyperlink that links to an internal source -->
         <p><a href="#gallery">Jump down to our Fitness Gallery</a></p>
     </header>
 
-    <!-- Section 1 with Class Selector -->
-    <section class="card-section">
+    <!-- Section 1: Core Fitness Pillars -->
+    <section>
         <h2>Key components of fitness</h2>
         <p>Achieving overall health requires balancing multiple types of exercise throughout your weekly routine.</p>
 
@@ -36,8 +31,8 @@
         </ul>
     </section>
 
-    <!-- Section 2 with Class Selector -->
-    <section class="card-section">
+    <!-- Section 2: Getting started -->
+    <section>
         <h2>Daily habits for longevity</h2>
         <p>Consistency is key when building a lasting lifestyle change. Start with small, daily movements and build up gradually over time.</p>
         
@@ -53,8 +48,8 @@
         </ul>
     </section>
 
-    <!-- Section 3 with Class Selector -->
-    <section class="card-section">
+    <!-- Nutrition Section -->
+    <section>
         <h2>Nutrition</h2>
         <p>Here's what nutrition advice we have to offer:</p>
 
@@ -64,29 +59,31 @@
         </ol>
     </section>
     
-    <!-- Gallery Section using ID Selector (#gallery) and Class Selector (.card-section) -->
-    <section id="gallery" class="card-section">
+    <!-- Gallery Section (Targets the internal link) -->
+    <section id="gallery">
         <h2>Gallery</h2>
         <p>Here is a small gallery for fitness inspiration.</p>
         
-        <div class="gallery-container">
-            <p>
-                <a href="https://unsplash.com" target="_blank">
-                    <img src="ropes1.jpg" alt="Person working out with battle ropes in a gym" width="300" height="200">
-                </a>
-                <br>
-                Gym training session<br>
-                Photo created by: <a href="https://unsplash.com" target="_blank">Unsplash</a>
-            </p>
+        <!-- Image 1: Fixed quotation marks and updated to a direct Unsplash image URL -->
+        <p>
+            <a href="https://unsplash.com" target="_blank">
+                <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5" alt="Person working out with battle ropes in a gym" width="300" height="200">
+            </a>
+            <br>
+            Gym training session<br>
+            <!-- Hyperlink that links to an external source & opens in a new tab -->
+            Photo created by: <a href="https://unsplash.com" target="_blank">Unsplash</a>
+        </p>
 
-            <p>
-                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd" alt="Person performing a barbell squat" width="300" height="200">
-                <br>
-                Gym training session<br>
-                Photo created by: <a href="https://unsplash.com" target="_blank">Unsplash</a>
-            </p>
-        </div>
+        <!-- Image 2: Absolute file path, alt attribute, custom width/height -->
+        <p>
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd" alt="Person performing a barbell squat" width="300" height="200">
+            <br>
+            Gym training session<br>
+            Photo created by: <a href="https://unsplash.com" target="_blank">Unsplash</a>
+        </p>
 
+        <!-- Internal link back to top -->
         <p><a href="#top">Back to top</a></p>
     </section>
 
