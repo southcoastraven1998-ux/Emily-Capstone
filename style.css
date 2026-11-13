@@ -52,7 +52,7 @@ h3 {
 
 /* 2. Background Image & Background Position Properties */
 .hero-banner {
-    background-image: url('ropes1.avif.jpg'); /* Sets the background-image property */
+    background-image: url('fit-backround.avif'); /* Sets the background-image property */
     background-position: center;              /* Sets the background-position property */
     background-size: cover;                   /* Ensures image covers the banner cleanly */
     color: #ffffff;                           /* Changes text color for contrast against the image */
