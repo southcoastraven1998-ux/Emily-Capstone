@@ -10,6 +10,11 @@ body {
     line-height: 1.6;
 }
 
+/* Global reset to remove default padding/margins that cause white page edges */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* 1. Div Container with max-width and auto to center content */
 .container {
     max-width: 1000px;   /* Sets the max-width property */
@@ -87,6 +92,24 @@ h3 {
     width: 90%;
     margin: 0 auto;
     padding: 10px;
+}
+
+/* Image Border Fixes */
+img {
+    display: block;      /* Removes the default inline baseline gap underneath images */
+    max-width: 100%;     /* Makes images responsive */
+    height: auto;        /* Preserves aspect ratio */
+    border: none;        /* Removes default borders */
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensures images inside your gallery fill their containers cleanly without white space */
+.gallery-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* Prevents letterboxing/distortion */
+    display: block;
 }
 
 /* Links Styling */
