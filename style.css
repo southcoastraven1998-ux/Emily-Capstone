@@ -21,8 +21,10 @@ body {
 /* Headings Styling */
 h1 {
     color: #1b4332;
-    font-size: 32px;
-    font-weight: 700;
+    font-size: 38px;            /* Increased size for prominence */
+    font-weight: 900;           /* Extra bold weight */
+    text-transform: uppercase;  /* Gives it a punchy, bold look */
+    letter-spacing: -0.5px;     /* Tightens spacing for a modern feel */
     margin-bottom: 15px;
 }
 
