@@ -11,6 +11,74 @@
 
     <!-- Link to your external stylesheet -->
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* CSS Comment: Global styles and layout */
+        body {
+            background-color: #121826; /* Deep navy-slate background */
+            color: #f3f4f6;            /* Light text for readability */
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;           /* Maximum boldness */
+            font-size: 3.5rem;          /* Large title size */
+            text-transform: uppercase;  /* Bold all-caps look */
+            letter-spacing: -1px;
+            color: #38bdf8;             /* Accent color for the title */
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #38bdf8;
+        }
+
+        /* Class Selector: Page layout using margin, padding, and border */
+        .content-box {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #1e293b;
+            border: 2px solid #334155;
+            border-radius: 8px;
+        }
+
+        /* Class Selector: Banner section with background image applied */
+        .hero-banner {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('photos1/ropes1.avif');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 80px 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            border: 2px solid #334155;
+            border-radius: 8px;
+            border-bottom: 4px solid #38bdf8;
+        }
+
+        /* ID Selector for Footer */
+        #main-footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #0f172a;
+            border-top: 2px solid #334155;
+        }
+
+        /* Intentional Page Break for printing/PDF export */
+        .page-break {
+            page-break-before: always;
+            break-before: page;
+            border-top: 2px dashed #475569;
+            margin-top: 50px;
+            padding-top: 20px;
+        }
+    </style>
 </head>
 <body id="top">
 
@@ -23,7 +91,7 @@
         <p><a href="#gallery">Jump down to our Fitness Gallery</a></p>
     </header>
 
-    <!-- Banner Section with Background Image Applied -->
+    <!-- Banner Section with Background Image -->
     <section class="hero-banner">
         <h2>Welcome to Your Longevity Journey</h2>
         <p>Consistency, proper nutrition, and movement build a resilient body.</p>
@@ -58,9 +126,6 @@
             </li>
             <li>Strength Training</li>
         </ul>
-
-        <!-- YouTube Fitness Video Link (opens in a new window) -->
-        <p>Need visual guidance? Watch this helpful <a href="https://www.youtube.com/watch?v=UItW7xwoqU0" target="_blank">Full Body Workout Video on YouTube</a> for extra inspiration.</p>
     </section>
 
     <!-- Nutrition Section -->
@@ -79,7 +144,7 @@
         <h2>Gallery</h2>
         <p>Here is a small gallery for fitness inspiration.</p>
         
-        <!-- Image 1 with external link opening in a new window -->
+        <!-- Image 1 -->
         <p>
             <a href="https://unsplash.com" target="_blank">
                 <img src="photos1/ropes1.avif" alt="Person working out with battle ropes in a gym" width="300" height="200">
