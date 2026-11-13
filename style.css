@@ -1,119 +1,68 @@
-/* Base Page Styling */
+/* CSS Comment: Global styles and layout structure */
 body {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
-    color: #333333;
-    background-color: #f4f7f6;
-    margin: 0;
+    background-color: #121826; /* Deep navy-slate background */
+    color: #f3f4f6;            /* Light text for readability */
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     line-height: 1.6;
-}
-
-/* Global reset to remove default padding/margins that cause white page edges */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-/* 1. Div Container with max-width and auto to center content */
-.container {
-    max-width: 1000px;   /* Sets the max-width property */
-    margin: 0 auto;      /* Uses 'auto' left/right margins to center the container */
-    padding: 20px;
-    width: 100%;         /* Responsive fallback width */
-}
-
-/* Headings Styling */
-h1 {
-    color: #1b4332;
-    font-size: 38px;            /* Increased size for prominence */
-    font-weight: 900;           /* Extra bold weight */
-    text-transform: uppercase;  /* Gives it a punchy, bold look */
-    letter-spacing: -0.5px;     /* Tightens spacing for a modern feel */
-    margin-bottom: 15px;
-}
-
-h2 {
-    color: #2d6a4f;
-    font-size: 24px;
-    font-weight: 700;
-    border-left: 5px solid #2d6a4f;
-    padding-left: 10px;
-}
-
-h3 {
-    color: #40916c;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-/* Class Selector (.card-section) */
-.card-section {
-    background-color: #ffffff;
-    padding: 25px;
-    margin-bottom: 25px;
-    border: 1px solid #d3d3d3;
-    border-radius: 8px;
-    width: 100%;
-}
-
-/* 2. Background Image & Background Position Properties */
-.hero-banner {
-    background-image: url('fit-backround.avif'); /* Sets the background-image property */
-    background-position: center;              /* Sets the background-position property */
-    background-size: cover;                   /* Ensures image covers the banner cleanly */
-    color: #ffffff;                           /* Changes text color for contrast against the image */
-    border-top: 6px solid #1b4332;
-    position: relative;
-}
-
-/* Adding a dark overlay on the hero banner text for readability */
-.hero-banner::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dimming background image slightly */
-    border-radius: 8px;
-    z-index: 1;
-}
-
-.hero-banner > * {
-    position: relative;
-    z-index: 2; /* Keeps text above the dark overlay */
-}
-
-/* Identifier (ID) Selector (#gallery) */
-#gallery {
-    background-color: #f8f9fa;
-    border: 2px dashed #40916c;
-}
-
-.gallery-container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-/* Image Border Fixes */
-img {
-    display: block;      /* Removes the default inline baseline gap underneath images */
-    max-width: 100%;     /* Makes images responsive */
-    height: auto;        /* Preserves aspect ratio */
-    border: none;        /* Removes default borders */
     margin: 0;
     padding: 0;
 }
 
-/* Ensures images inside your gallery fill their containers cleanly without white space */
-.gallery-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;   /* Prevents letterboxing/distortion */
-    display: block;
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Links Styling */
+header h1 {
+    font-weight: 900;           /* Maximum boldness */
+    font-size: 3.5rem;          /* Large title size */
+    text-transform: uppercase;  /* Bold all-caps look */
+    letter-spacing: -1px;
+    color: #38bdf8;             /* Accent color for the title */
+    margin-bottom: 10px;
+}
+
 a {
-    color: #1b4332;
-    font-weight: 700;
+    color: #38bdf8;
+}
+
+/* Class Selector: Page layout using margin, padding, and border */
+.content-box {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #1e293b;
+    border: 2px solid #334155;
+    border-radius: 8px;
+}
+
+/* Class Selector: Banner section featuring the background image */
+.hero-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('photos1/ropes1.avif');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border: 2px solid #334155;
+    border-radius: 8px;
+    border-bottom: 4px solid #38bdf8;
+}
+
+/* ID Selector for Footer */
+#main-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #0f172a;
+    border-top: 2px solid #334155;
+}
+
+/* Intentional Page Break for printing/PDF export */
+.page-break {
+    page-break-before: always;
+    break-before: page;
+    border-top: 2px dashed #475569;
+    margin-top: 50px;
+    padding-top: 20px;
 }
