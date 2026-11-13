@@ -1,20 +1,30 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Capstone Fitness and Longevity</title>
+    
+    <!-- Custom Fonts: Google Fonts imported -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
     <!-- Link to your external stylesheet -->
     <link rel="stylesheet" href="style.css">
+    
     <style>
+        /* CSS Comment: Global styles and layout */
         body {
             background-color: #121826; /* Deep navy-slate background */
             color: #f3f4f6;            /* Light text for readability */
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
             line-height: 1.6;
-            padding: 20px 40px;
+            margin: 0;
+            padding: 0;
         }
 
         header h1 {
+            font-family: 'Montserrat', sans-serif;
             font-weight: 900;           /* Maximum boldness */
             font-size: 3.5rem;          /* Large title size */
             text-transform: uppercase;  /* Bold all-caps look */
@@ -26,12 +36,54 @@
         a {
             color: #38bdf8;
         }
+
+        /* Class Selector: Page layout using margin, padding, and border */
+        .content-box {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #1e293b;
+            border: 2px solid #334155;
+            border-radius: 8px;
+        }
+
+        /* Class Selector: Banner section with background image applied */
+        .hero-banner {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('photos1/ropes1.avif');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 80px 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            border: 2px solid #334155;
+            border-radius: 8px;
+            border-bottom: 4px solid #38bdf8;
+        }
+
+        /* ID Selector for Footer */
+        #main-footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #0f172a;
+            border-top: 2px solid #334155;
+        }
+
+        /* Intentional Page Break for printing/PDF export */
+        .page-break {
+            page-break-before: always;
+            break-before: page;
+            border-top: 2px dashed #475569;
+            margin-top: 50px;
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body id="top">
 
-    <!-- Header section with title, main summary, and internal navigation link -->
-    <header>
+    <!-- HTML Comment: Header section with title, main summary, and internal navigation link -->
+    <header class="content-box">
         <h1>Fit for life</h1>
         <p>Physical fitness is important for longevity because it keeps your heart healthy, strengthens muscles and bones, and reduces the risk of chronic diseases. Staying active helps maintain mobility, independence, and a better quality of life as we age.</p>
         
@@ -39,8 +91,14 @@
         <p><a href="#gallery">Jump down to our Fitness Gallery</a></p>
     </header>
 
+    <!-- Banner Section with Background Image -->
+    <section class="hero-banner">
+        <h2>Welcome to Your Longevity Journey</h2>
+        <p>Consistency, proper nutrition, and movement build a resilient body.</p>
+    </section>
+
     <!-- Section 1: Core Fitness Pillars -->
-    <section>
+    <section class="content-box">
         <h2>Key components of fitness</h2>
         <p>Achieving overall health requires balancing multiple types of exercise throughout your weekly routine.</p>
 
@@ -54,7 +112,7 @@
     </section>
 
     <!-- Section 2: Getting started -->
-    <section>
+    <section class="content-box">
         <h2>Daily habits for longevity</h2>
         <p>Consistency is key when building a lasting lifestyle change. Start with small, daily movements and build up gradually over time.</p>
         
@@ -71,7 +129,7 @@
     </section>
 
     <!-- Nutrition Section -->
-    <section>
+    <section class="content-box">
         <h2>Nutrition</h2>
         <p>Here's what nutrition advice we have to offer:</p>
 
@@ -81,8 +139,8 @@
         </ol>
     </section>
     
-    <!-- Gallery Section (Targets the internal link) -->
-    <section id="gallery">
+    <!-- Gallery Section with intentional page break, target="_blank" external links, and images -->
+    <section class="content-box page-break" id="gallery">
         <h2>Gallery</h2>
         <p>Here is a small gallery for fitness inspiration.</p>
         
@@ -107,6 +165,11 @@
         <!-- Internal link back to top -->
         <p><a href="#top">Back to top</a></p>
     </section>
+
+    <!-- Footer Element -->
+    <footer id="main-footer">
+        <p>&copy; 2026 Capstone Fitness and Longevity. External resource: <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></p>
+    </footer>
 
 </body>
 </html>
